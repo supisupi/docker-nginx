@@ -6,9 +6,10 @@ location ${NGINX_STATUS_LOCATION} {
   # Do not log access entries for status page
   access_log   off;
 
+  
   # Only allow access from IPS
-  allow ${NGINX_STATUS_ALLOW};
-
+  # allow ${NGINX_STATUS_ALLOW};
+ 
   # Deny the rest of the connections
-  deny ${NGINX_STATUS_DENY};
+  # deny ${NGINX_STATUS_DENY};
 }
